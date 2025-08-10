@@ -64,6 +64,11 @@
         timeout-ms = <100>;
         require-prior-idle-ms = <150>;
 
+        combo_lang2 {
+            key-positions = <11 12>;
+            bindings = <&kp LANG2>;
+        };
+
         combo_reset_L {
             key-positions = <3 8 13>;
             bindings = <&bootloader>;
@@ -74,19 +79,14 @@
             bindings = <&studio_unlock>;
         };
 
-        combo_toggle_CCF {
+        combo_tog_CCF {
             key-positions = <3 13>;
             bindings = <&tog 2>;
         };
 
-        combo_toggl_math {
-            key-positions = <0 1>;
+        combo_tog_math {
+            key-positions = <0 1 16>;
             bindings = <&tog 3>;
-        };
-
-        combo_lang2 {
-            key-positions = <11 12>;
-            bindings = <&kp LANG2>;
         };
     };
     
@@ -98,7 +98,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer_keymap {
+        layer_blender {
             bindings = <
                         &kp Q       &kp E       &kp F       &kp J               &trans      &trans      &trans      &trans      
 &kp LSHFT   &kp TAB     &kp S       &kp G       &kp R       &kp L               &trans      &trans      &trans      &trans      &trans      &trans      
@@ -116,10 +116,10 @@
             >;
         };
 
-        layer_CCFOLIA {
+        layer_CCFOLIA_2 {
             bindings = <
-                        &kp S       &kp D       &kp W       &kp R               &trans      &trans      &trans      &trans      
-&kp LC(BSPC) &kp L      &kp E       &kp S       &kp T       &kp LSHFT           &trans      &trans      &trans      &trans      &trans      &trans      
+                        &kp BSPC    &kp D       &kp W       &kp R               &trans      &trans      &trans      &trans      
+&kp LCTRL   &kp S       &kp L       &kp E       &kp T       &kp LSHFT           &trans      &trans      &trans      &trans      &trans      &trans      
             &kp LC(Z)   &kp LC(Y)   &kp LC(V)   &kp O                                       &trans      &trans      &trans      &trans      
                                                 &none       &none               &trans      &trans      
             >;
@@ -127,9 +127,9 @@
 
         layer_math {
             bindings = <
-                        &kp KP_N7   &kp KP_N8   &kp KP_N9   &none               &trans      &trans      &trans      &trans      
-&kp RET     &kp KP_N0   &kp KP_N4   &kp KP_N5   &kp KP_N6   &none               &trans      &trans      &trans      &trans      &trans      &trans      
-            &kp DOT     &kp KP_N1   &kp KP_N2   &kp KP_N3                                   &trans      &trans      &trans      &trans      
+                        &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp BSPC            &trans      &trans      &trans      &trans      
+&kp RET     &kp KP_N0   &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp FSLH            &trans      &trans      &trans      &trans      &trans      &trans      
+            &kp KP_DOT  &kp KP_N1   &kp KP_N2   &kp KP_N3                                   &trans      &trans      &trans      &trans      
                                                 &kp KP_NUM  &mo 4               &trans      &trans      
             >;
         };
@@ -138,7 +138,7 @@
             bindings = <
                         &kp LT      &kp EQUAL   &kp GT      &none               &trans      &trans      &trans      &trans      
 &kp RET     &kp PLUS    &kp MINUS   &kp STAR    &kp FSLH    &none               &trans      &trans      &trans      &trans      &trans      &trans      
-            &none       &kp LBRC    &none       &kp RBRC                                    &trans      &trans      &trans      &trans      
+            &kp LBKT    &kp RBKT    &kp LBRC    &kp RBRC                                    &trans      &trans      &trans      &trans      
                                                 &none       &none               &trans      &trans      
             >;
         };
