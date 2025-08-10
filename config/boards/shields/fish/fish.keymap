@@ -98,7 +98,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer_blender {
+        layer_keymap {
             bindings = <
                         &kp Q       &kp E       &kp F       &kp J               &trans      &trans      &trans      &trans      
 &kp LSHFT   &kp TAB     &kp S       &kp G       &kp R       &kp L               &trans      &trans      &trans      &trans      &trans      &trans      
@@ -136,7 +136,7 @@
 
         layer_math_2 {
             bindings = <
-                        &kp LT      &kp GRAVE   &kp GT      &none               &trans      &trans      &trans      &trans      
+                        &kp LT      &kp EQUAL   &kp GT      &none               &trans      &trans      &trans      &trans      
 &kp RET     &kp PLUS    &kp MINUS   &kp STAR    &kp FSLH    &none               &trans      &trans      &trans      &trans      &trans      &trans      
             &none       &kp LBRC    &none       &kp RBRC                                    &trans      &trans      &trans      &trans      
                                                 &none       &none               &trans      &trans      
