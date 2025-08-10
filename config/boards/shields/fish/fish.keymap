@@ -90,7 +90,7 @@
         };
 
         combo_tog_5 {
-            key-positions = <0 1 8 16>;
+            key-positions = <0 1 8>;
             bindings = <&tog 5>;
         };
     };
@@ -151,7 +151,7 @@
         layer_system {
             bindings = <
                         &bt BT_SEL 4 &bt BT_CLR &bt BT_CLR_ALL &out OUT_TOG     &trans      &trans      &trans      &trans      
-&none       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &none           &trans      &trans      &trans      &trans      &trans      &trans      
+&none       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &tog 5          &trans      &trans      &trans      &trans      &trans      &trans      
             &none       &none       &none       &none                                       &trans      &trans      &trans      &trans      
                                                 &none       &none               &trans      &trans      
             >;
