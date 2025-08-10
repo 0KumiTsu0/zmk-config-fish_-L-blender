@@ -136,12 +136,11 @@
 
         layer_math_2 {
             bindings = <
-                        &kp LT      &kp EQUAL   &kp GT      &none               &kp EQUAL   &kp LT      &kp UNDER   &kp GT      
-&kp RET     &kp PLUS    &kp MINUS   &kp STAR    &kp FSLH    &none               &kp LS(INT1) &mt RSHFT COLON &mt RALT MINUS &mt RCTRL DQT &kp FSLH &kp PRCNT 
-            &kp LBKT    &kp RBKT    &kp LBRC    &kp RBRC                                    &kp EXCL    &kp QMARK   &kp SQT     &kp SEMI    
-                                                &none       &none               &trans      &lt 6 SPACE 
+                        &kp LT      &kp EQUAL   &kp GT      &none               &trans      &trans      &trans      &trans      
+&kp RET     &kp PLUS    &kp MINUS   &kp STAR    &kp FSLH    &none               &trans      &trans      &trans      &trans      &trans      &trans      
+            &kp LBKT    &kp RBKT    &kp LBRC    &kp RBRC                                    &trans      &trans      &trans      &trans      
+                                                &none       &none               &trans      &trans      
             >;
         };
     };
-};
 };
