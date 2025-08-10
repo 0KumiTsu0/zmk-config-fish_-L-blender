@@ -118,10 +118,10 @@
 
         layer_CCFOLIA_2 {
             bindings = <
-                        &kp S       &kp LC(D)   &kp W       &kp LS(W)           &trans      &trans      &trans      &trans      
+                        &kp S       &kp LC(D)   &kp W       &kp LS(R)           &trans      &trans      &trans      &trans      
 &kp LC(BSPC) &kp L      &kp E       &kp S       &kp T       &kp R               &trans      &trans      &trans      &trans      &trans      &trans      
             &kp LC(Z)   &kp LC(Y)   &kp LC(V)   &kp O                                       &trans      &trans      &trans      &trans      
-                                                &none       &none               &trans      &trans      
+                                                &none       &kp LCTRL           &trans      &trans      
             >;
         };
 
